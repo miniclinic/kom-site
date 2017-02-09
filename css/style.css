@@ -1782,7 +1782,8 @@ ul.portfolio-items {
 
 .first-footer-widget img {
   max-height: 40px;
-  margin: 0 0 20px 0;
+  margin: 8px 0px 27px 0px;
+  max-width: 23%;
 }
 
 #footer-widgets p {
