@@ -14,6 +14,11 @@ jQuery(document).ready(function($) {
     if (isMobile) {
       navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
       $("body").css("padding-top", "0px");
+
+      // hide menu on click
+      $('#navbar').on('click', function(e) {
+          $('.navbar-toggle').click()
+      });
     }
 
     $window.scroll(function() {
