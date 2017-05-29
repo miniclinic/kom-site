@@ -3489,3 +3489,7 @@ h1 .label, h2 .label, h3 .label, h4 .label, h5 .label, h6 .label, p .label {
   border-width: 2px;
   background-color: transparent;
 }
+
+.navbar-collapse.in {
+  overflow-y: visible;
+}
