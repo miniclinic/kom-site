@@ -64,13 +64,32 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse text-center">
             <ul class="nav navbar-nav">
-              <li ><a class="page-scroll" href="#home" data-nav-section="home"><span>HOME</span></a></li>
-              <li><a class="page-scroll" href="#about" data-nav-section="about"><span>SOBRE</span></a></li>
-              <li><a class="page-scroll" href="#services" data-nav-section="services"><span>FUNCIONALIDADES</span></a></li>
+              <li ><a class="page-scroll" href="#home" data-nav-section="home"
+                onclick="javascript:tracking('Menu','Home')">
+                <span>HOME</span></a>
+              </li>
+              <li><a class="page-scroll" href="#about" data-nav-section="about"
+                onclick="javascript:tracking('Menu','Sobre')">
+                <span>SOBRE</span></a>
+              </li>
+              <li><a class="page-scroll" href="#services" data-nav-section="services"
+                onclick="javascript:tracking('Menu','Funcionalidades')">
+                <span>FUNCIONALIDADES</span></a>
+              </li>
               <!-- <li><a class="page-scroll" href="#screenshots" data-nav-section="screenshots"><span>SCREENSHOTS</span></a></li> -->
-              <li><a class="page-scroll" href="#pricing" data-nav-section="pricing"><span>PLANOS</span></a></li>
-              <li><a class="page-scroll" href="#footer-widgets" data-nav-section="footer-widgets"><span>CONTATO</span></a></li>
-              <li><a  href="https://web.komunicador.com.br"><span>ENTRAR</span></a></li>
+              <li><a class="page-scroll" href="#pricing" data-nav-section="pricing"
+                onclick="javascript:tracking('Menu','Planos')">
+                <span>PLANOS</span></a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#footer-widgets" data-nav-section="footer-widgets"
+                onclick="javascript:tracking('Menu','Contato')">
+                <span>CONTATO</span></a>
+              </li>
+              <li><a  href="https://web.komunicador.com.br"
+                onclick="javascript:tracking('Menu','Entrar')">
+                <span>ENTRAR</span></a>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </nav><!-- / navbar -->
@@ -397,7 +416,9 @@
          <div class="pricing-table-button text-center">
           <h1>Experimente o KOM!</h1>
           Comece utilizando o nosso plano grátis.</br></br>
-          <a href="https://web.komunicador.com.br/signup" class="btn btn-primary md">COMEÇAR</a>
+          <a href="https://web.komunicador.com.br/signup" class="btn btn-primary md"
+            onclick="javascript:tracking('Botão','Experimentar')">
+          COMEÇAR</a>
          </div>
        </div>
        <div class="col-sm-0 col-md-3">
@@ -498,6 +519,7 @@
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/scrolling-nav.js"></script>
   <script src="js/jquery.nav.js"></script>
+  <script src="js/tracking.js"></script>
   <!-- scripts -->
   <!-- nav scroll -->
   <script>
